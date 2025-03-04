@@ -4,12 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Olá</h1>
-    <img src="images/starwars_fundo.webp" alt="">
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__text">VOCÊ ESTÁ CONVIDADO PARA UMA AVENTURA GALÁCTICA!</h1>  
+            <h2 class="hero__text">
+                Em breve, estarei comemorando mais um ciclo estelar, e a Força me diz que você não pode ficar de fora! O tema da festa será uma das minhas franquias favoritas: "Star Wars".
+            </h2>  
+                <p class="hero__text">  
+                    A contagem regressiva já começou! Quanto tempo falta?<span id="contador"></span>  
+                </p>
 
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>localização</b>
+                        Rua Aurélia de andrade - Nova Iguaçu - RJ
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        02/01/2025 às 19:hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas Personalizadas</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempore, officiis placeat quaerat dolor numquam possimus aliquam laborum dolore recusandae ab est, at dolores deleniti sint rerum voluptatibus corrupti et?
+                </p>
+            </div>
+            <img class="event__image" src="images/bebidas.jpg" alt="bebidas">
+        </div>
+    </section>
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas Temáticas</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempore, officiis placeat quaerat dolor numquam possimus aliquam laborum dolore recusandae ab est, at dolores deleniti sint rerum voluptatibus corrupti et?
+                </p>
+            </div>
+            <img class="event__image" src="images/comida.webp" alt="comidas">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
